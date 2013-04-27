@@ -1,0 +1,74 @@
+com.cengek.cx.manager.GameManager -> a:
+    javax.microedition.lcdui.Graphics g -> a
+    javax.microedition.lcdui.game.LayerManager lg -> b
+    boolean isPlaying -> c
+    screens.ScreenGame screenGame -> d
+    screens.ScreenBelajar screenBelajar -> e
+    com.cengek.cx.screens.Screen currentScreen -> f
+    java.util.Vector screenVector -> g
+    void setLg(javax.microedition.lcdui.game.LayerManager) -> a
+    void setCurrentScreen(com.cengek.cx.screens.Screen) -> a
+    java.util.Vector getScreenVector() -> a
+    void start() -> b
+    void run() -> run
+    void pointerPressed(int,int) -> pointerPressed
+    void pointerReleased(int,int) -> pointerReleased
+    void pointerDragged(int,int) -> pointerDragged
+com.cengek.cx.manager.GameSettings -> b:
+com.cengek.cx.screens.Screen -> c:
+    javax.microedition.lcdui.game.LayerManager selflg -> a
+    com.cengek.cx.manager.GameManager host -> b
+    void draw() -> a
+    void pointerReleased(int,int) -> a
+com.cengek.cx.sprites.CXSprite -> d:
+    boolean isTouched(int,int) -> a
+com.cengek.cx.sprites.Char -> e:
+com.cengek.cx.util.CharFonts -> f:
+    java.lang.String sequence -> a
+    java.util.Hashtable fontChars -> b
+    void initialise(java.lang.String) -> a
+    javax.microedition.lcdui.game.Sprite charSprite(char,int,int,boolean) -> a
+    java.util.Vector getVectorStringSprite$65450c4c(java.lang.String,int,int,boolean,int) -> a
+com.cengek.cx.util.GameSound -> g:
+com.cengek.cx.util.ImageUtil -> h:
+    com.cengek.cx.util.ImageUtil iu -> a
+    com.cengek.cx.util.ImageUtil getInstance() -> a
+    javax.microedition.lcdui.Image createImage(java.lang.String) -> a
+com.cengek.cx.util.RMS -> i:
+com.cengek.cx.util.SpriteText -> j:
+    java.util.Vector v -> a
+    javax.microedition.lcdui.game.LayerManager lg -> b
+    int x -> c
+    int y -> d
+    boolean landscape -> e
+    boolean isAppended -> f
+    java.util.Timer timer -> g
+    com.cengek.cx.util.SpriteText$TTShowEachTick ttse -> h
+    int width -> i
+    void setText(java.lang.String) -> a
+    void show() -> a
+    void showEachTick(int) -> a
+    java.util.Timer access$0(com.cengek.cx.util.SpriteText) -> a
+com.cengek.cx.util.SpriteText$TTShowEachTick -> k:
+    int index -> a
+    com.cengek.cx.util.SpriteText this$0 -> b
+    void run() -> run
+main.GameMidlet -> main.GameMidlet:
+    com.cengek.cx.manager.GameManager gm -> a
+    javax.microedition.lcdui.Display display -> b
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+screens.ScreenBelajar -> l:
+    sprites.warna warnaMerah -> c
+    sprites.warna warnaBiru -> d
+    sprites.warna warnaKuning -> e
+    com.cengek.cx.util.SpriteText st -> f
+    int menu -> g
+    void draw() -> a
+    void pointerReleased(int,int) -> a
+screens.ScreenGame -> m:
+    void draw() -> a
+    void pointerReleased(int,int) -> a
+sprites.tombol -> n:
+sprites.warna -> o:
